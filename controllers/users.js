@@ -17,7 +17,7 @@ const getItems = async (req, res) => {
 };
 
 
-// GET DETail
+
 
 const getItem = async (req, res) => {
     try
