@@ -1,8 +1,8 @@
 const bcryptjs =  require("bcryptjs")
 
 /**Contraseña sin encriptar: hola.12 */
-const encrypt = async (passswordPlain)=>{
-    const hash = await bcryptjs.hash(passswordPlain, 10);
+const encrypt = async (passwordPlain)=>{
+    const hash = await bcryptjs.hash(passwordPlain, 10);
     return hash
 };
 

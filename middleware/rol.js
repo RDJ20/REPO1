@@ -8,7 +8,7 @@ const checkRol = (roles) =>(req, res, next) =>{
 
         if(!checkValueRol){
             handleHttpError(res, "USER-NOT_PERMISSIONS", 403)
-            ruturn;
+            return;
         }
 
         next();
