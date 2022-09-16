@@ -43,7 +43,7 @@
 
   "jest": {
     "testEnvironment": "node",
-    "coveragePathIgnorePatterns": [
+    "coveragePathIgnorePatterns": [ 
       "/node_modules/"
     ],
     "coverageReporters": [

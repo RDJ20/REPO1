@@ -5,7 +5,7 @@ const swaggerUI = require("swagger-ui-express")
 const dbConnectNoSql = require('./config/mongo')
 const {dbConnectMySql} = require("./config/mysql")
 const app = express()
-const port = process.env.PORT||3000
+const port = process.env.PORT||3001
 const ENGINE_DB = process.env.ENGINE_DB;
 const loggerStream = require("./utils/handleLogger");
 const NODE_ENV = process.env.NODE_ENV || 'development';
@@ -29,6 +29,10 @@ if(NODE_ENV !== 'test'){
     app.listen(port);
 };
 
+
+app.listen(port, ()=>{
+    console.log(`http://localhost:${port}`)
+})
 
 (ENGINE_DB ==='nosql')? dbConnectNoSql() : dbConnectMySql();
 module.exports = app;
