@@ -12,7 +12,7 @@ const swaggerDefinition = {
             url: "http://localhost:3001/api"
         },
         {
-            url: "https://servidorapibiblioteca.herokuapp.com/api",
+            url: "https://servidor-heroku1.herokuapp.com/api",
         },
     ],
     components: {
