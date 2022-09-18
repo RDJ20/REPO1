@@ -5,6 +5,9 @@ const models = {
     usersModel: require(`${pathModels}/users`),
     tracksModel: require(`${pathModels}/tracks`),
     storageModel: require(`${pathModels}/storage`),
+    
 }
+console.log("Paso lo de los models");
+
 
 module.exports = models;

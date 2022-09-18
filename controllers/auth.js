@@ -5,7 +5,12 @@ const { usersModel } = require("../models")
 const { handleHttpError } = require("../utils/handleError");
 
 
-/** este controlador es el encargado de registrar un usuario*/
+/**
+ * Este controlador es el encargado de logear a una persona
+/**este controlador es el encargado de logear a una persona  
+* @param {*} req
+* @param {*} res
+*/
 const registerCtrl = async (req, res) => {
   try{
     req = matchedData(req);
